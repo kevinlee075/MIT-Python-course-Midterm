@@ -5,6 +5,12 @@ Created on Sun Jul  4 16:17:24 2021
 @author: Lenovo
 """
 
+#Implement a function called closest_power that meets the specifications below.
+#For example,
+#closest_power(3,12) returns 2
+#closest_power(4,12) returns 2
+#closest_power(4,1) returns 0
+
 def closest_power(base, num):
     '''
     base: base of the exponential, integer > 1
