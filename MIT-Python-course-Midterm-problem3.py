@@ -20,11 +20,11 @@ def closest_power(base, num):
     In case of a tie, return the smaller value.
     Returns the exponent.
     '''
-    expon = 0
-    while base ** expon < num:
+    expon = 0                                                                      #search the expon(exponent) from 0
+    while base ** expon < num:                                                     #execute 'base^expon using while loop to find the closest int which is smaller than the num
         expon += 1
-    if abs(num - base ** expon) >= abs(num - base ** (expon-1)):
-        result = expon - 1
+    if abs(num - base ** expon) >= abs(num - base ** (expon-1)):                   #after the loop, base^expon will be larger than num
+        result = expon - 1                                                         #chech whether base^expon or base^(expon-1) is closer to num
     else:
         result = expon
     return result
